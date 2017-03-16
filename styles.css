@@ -7,6 +7,33 @@ body {
  ***********  WEBSITE CSS  ***************
  ****************************************/
 
+#note1{
+	color: black;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	position:absolute;
+	z-index: 5;
+	top: 85%;
+	left: 20%;
+}
+
+#note2 {
+	color: black;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	position:absolute;
+	z-index: 5;
+	top: 30%;
+	left: 65%;
+}
+
+#note3 {
+	color: black;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	position:absolute;
+	z-index: 5;
+	top: 5%;
+	left: 35%;
+}
+
 .box:hover{
     background-color: Black;
 }
@@ -35,6 +62,7 @@ body {
 }
 .button{
     background-color: #36454f;
+	width: 200px;
 }
 
 #drop:hover{
@@ -51,7 +79,7 @@ body {
 }
 
 .croudzBackground {
-    background: url("images/crowdz2.PNG") no-repeat center center fixed;
+    background: url("./images/crowdz2.PNG") no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -181,46 +209,74 @@ button.invisible {
 	font-size: 16px;
 }
 #bookmarksClick{
-	margin-top: -49px;
+	margin-top: -48px;
 	margin-right:15px;
 	padding-right: 25px;
+
 	height: 50px;
-	width: 100px;
+	width: 120px;
 	float: right;
 	background: transparent;
 	border: none !important;
 	color:white;
+  cursor: pointer;
+}
+
+#maps {
+	font-size: 16px;
+  top: 10px;
+
+}
+
+#plsworkmaps{
+	margin-top: 0px;
+	float: left;
+	margin-right:15px;
+}
+
+#mapsClick{
+	padding-right: 25px;
+	height: 17px;
+	width: 100px;
+	background: transparent;
+	border: none !important;
+	color:white;
+  position: relative;
 }
 
 #mapAndFav {
-    margin-top: 5px;
+  margin-top: 5px;
 	padding-left: 40px;
-    position:relative;
+  position:relative;
 }
 
 #mapLabel {
     position:relative;
+    top: 5px;
     /*font:18px arial, sans-serif;*/
 }
+
 #underlineGrey {
-	width: 158px;
-	height:2px;
-	background-color: black;
-	opacity: .4;
-	position:relative;
-	top: -7px;
-	left:20px;
-	float:right;
+  width: 158px;
+  height:2px;
+  background-color: black;
+  opacity: .4;
+  position:relative;
+  top: -5px;
+  left: -60px;
 
 }
 #underlineWhite {
-	width: 159px;
-	height:2px;
-	background-color: white;
-	position:relative;
-	top: -5px;
-	left:-60px;
+  width: 159px;
+  height:2px;
+  background-color: white;
+  position:relative;
+  top: -7px;
+  left: 20px;
+  float: right;
+
 }
+
 
 button.search{
     position:absolute;
@@ -233,11 +289,28 @@ button.search{
     border:none;
     color:white;
     z-index: 1;
+    float: right;
+
+
+}
+
+button.search2{
+    position:absolute;
+    margin-top:  -80px;
+    margin-left: 235px;
+    padding: 5px;
+    font:16px arial, sans-serif;
+    background: solid;
+    background-color: #45a162;
+    border:none;
+    color:white;
+    z-index: 1;
+    float: right;
 }
 
 button.dropbtn {
     position:absolute;
-    margin-top:  -82px;
+    margin-top:  -80px;
     margin-left: 270px;
     background: solid;
     background-color: #45a162;
@@ -264,9 +337,27 @@ button.dropbtn {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 4;
 }
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    margin-top:  -85px;
+    margin-left: 300px;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 4;
+}
 
 /* Links inside the dropdown */
 .dropdown-content a {
+    font:16px arial, sans-serif;
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content2 a {
+  /*padding-top: 5px;*/
     font:16px arial, sans-serif;
     color: black;
     padding: 10px 10px;
@@ -277,25 +368,65 @@ button.dropbtn {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-#favouritesLabel {
+#dropDown {
+	left: -155px;
+	top: 39px;
+	margin-top:10px;
+	position:relative;
+}
 
+
+
+#favouritesLabel {
 	position:relative;
 	float:right;
-	margin-top: -33px;
+	margin-top: -18px;
 	padding-right: 25px;
+  font-size: 16px;
     /*margin-left: 200px;*/
 
     /*font:18px arial, sans-serif;*/
 }
 
 #mapIcons {
-    position:relative;
 
-    z-index:2;
+    z-index:3;
 }
 #streetCart{
-	margin-top: 375px;
-	margin-left: 167px;
+	position: absolute;
+	left:170px;
+	top: 480px;
+
+}
+#Churchill{
+	position:absolute;
+	margin-top: 10px;
+	margin-left: 236px;
+}
+#Cafe{
+	position:absolute;
+	margin-top: 165px;
+	margin-left: 186px;
+}
+#Cafe2 {
+	position:absolute;
+	margin-top: 90px;
+	margin-left: 53px;
+}
+#store1 {
+	position:absolute;
+	margin-top: 90px;
+	margin-left: 122px;
+}
+#store2 {
+	position:absolute;
+	margin-top: 190px;
+	margin-left: 53px;
+}
+#store3 {
+	position:absolute;
+	margin-top: 310px;
+	margin-left: 43px;
 }
 
 #testButtonClose {

@@ -13,13 +13,22 @@
 
     function garbage1() {
       document.getElementById('garbageCan').style.display = 'block';
+      document.getElementById('garbageCan').style.bottom = '350px';
+      document.getElementById('removeBar').style.bottom = '350px';
     }
     function garbage2() {
       document.getElementById('garbageCan').style.display = 'block';
-      
+      document.getElementById('garbageCan').style.bottom = '250px';
+      document.getElementById('removeBar').style.bottom = '250px';
+
     }
     function garbage3() {
       document.getElementById('garbageCan').style.display = 'block';
+      document.getElementById('garbageCan').style.bottom = '150px';
+      document.getElementById('removeBar').style.bottom = '150px';
+    }
+    function removed1() {
+      document.getElementById('removeBar').style.display = 'block';
     }
     </script>
 
@@ -27,9 +36,9 @@
 
         <!-- This is a top bar of the website, NOT THE ANDROID-->
         <div class="topbar">
-            <div class="button" id="drop">
+            <div class="button" id="drop" onclick=javascript:location.href="https://docs.google.com/document/d/1FHbX5t03lcOJBMKd59RlrcWkjg2B1GA4jK7I5JcTCSA/edit">
                 <div class="buttonText">
-                    Drop
+                    About
                 </div>
             </div>
         </div>
@@ -58,26 +67,39 @@
                         Crowdz
                     </p>
                     <div id="mapAndFav">
-                        <p id="mapLabel">
-                            Map
-                        </p>
-                        <div id="underlineLight"></div>
+
+        						<div id="plsworkmaps">
+        							<button id="mapsClick" onclick=location.href="MainPage.html" >
+        								<div id="maps">
+        									Map
+        								</div>
+        							</button>
+        						</div>
+
+
                         <div id="underlineDark"></div>
+                        <div id="underlineLight"></div>
 
                         <p id="favouritesLabel">
                             Bookmarks
                         </p>
+
                     </div>
 
 
-                    <button onclick="myFunction()" class="dropbtn">&#8942;</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="feedbackPage.html">Send Feedback</a>
-                        <a href="helpPage.html">Help</a>
-                        <a href="settingsPage.html">Settings</a>
+
+          					<div id="dropDown">
+          	                    <button onclick="myFunction()" class="dropbtn">&#8942;</button>
+          	                    <div id="myDropdown" class="dropdown-content2">
+          	                        <a href="feedbackPage.html">Send Feedback</a>
+          	                        <a href="helpPage.html">Help</a>
+          	                        <a href="settingsPage.html">Settings</a>
+          	                    </div>
+          					<button class="search2" onclick=javascript:location.href="searchPage.html"><i class="material-icons">search</i></button>
+
                     </div>
 
-                    <button class="search" onclick=javascript:location.href="helpPage.html"><i class="material-icons">search</i></button>
+
 
                 </div>
                 <button class="invisible" onclick='garbage1(this)'>
@@ -94,6 +116,8 @@
                   </div>
                   <div class="restaurantImage">
                   </div>
+                  <button id="garbageCan" onclick="removed1(this)"></button>
+                  <div id="removeBar"><span style="vertical-align: center; margin-left: 8px;"><div class="headerBarText">Removed</div></span></div>
                 </button>
                 <span style="margin-top: 20">
                   <button class="invisible" onclick='garbage2(this)'>
@@ -136,7 +160,6 @@
 
         <div id="androidBottomBar">
         </div>
-
     </body>
 
 </html>
