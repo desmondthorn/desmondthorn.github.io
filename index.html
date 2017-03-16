@@ -1,105 +1,13 @@
+<!-- This is the first page on the site with a disclaimer where people hit OK the go to the main page-->
+
 <!DOCTYPE html>
-
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<body class="croudzBackground">
+			<IMG class="assurance" src="./images/Assurance.png">
+			<button class="OK" onclick=javascript:location.href="MainPage.html">OK</button>>
+	</body>	
+</head>
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script type="text/javascript" src="Scripts.js"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet">
-    </head>
-
-    <body class="croudzBackground">
-        <!-- This is a top bar of the website, NOT THE ANDROID-->
-        <div class="topbar">
-            <div class="button" id="drop">
-                <div class="buttonText">
-                    Drop
-                </div>
-            </div>
-        </div>
-
-        <!--The android part starts here, the mid class is just for centering
-          objects around the middle of the page-->
-        <div class="mid">
-            <div class="phone" background="images/phone.jpg">
-            </div>
-
-
-
-            <!--Put everything here, This is the contents within the screen-->
-            <div class="screen"> <!onclick="removeInfo()"> <!This script is causing bugs>
-                <div id="androidBar">
-                    <div id=statusBarIcons>
-
-                        <img src="images/cellSignal.png"></img>
-                        <img src="images/wifiSignal.png"></img>
-                        <p id="Time">
-                            <script>time();</script>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="crowdz"
-                    <p id="logo">
-                        Crowdz
-                    </p>
-                    <div id="mapAndFav">
-                        <p id="mapLabel">
-                            Map
-                        </p>
-
-						<div id="underlineWhite"></div>
-						<div id="underlineGrey"></div>
-
-						<button id="bookmarksClick" onclick=location.href="bookmarksPage.html" >
-							<div id="bookmarks">
-								Bookmarks
-							</div>
-						</button>
-
-                    </div>
-
-                    <button onclick="myFunction()" class="dropbtn">&#8942;</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="feedbackPage.html">Send Feedback</a>
-                        <a href="helpPage.html">Help</a>
-                        <a href="settingsPage.html">Settings</a>
-                    </div>
-
-                    <button class="search" onclick=javascript:location.href="searchPage.html"><i class="material-icons">search</i></button>
-                </div>
-
-				<div class="moreInfo">
-				</div>
-
-                <!-- Able to close the infobar by clicking on it -->
-                <div class="infoBar"  onclick="showMoreInfo()">
-                    <div id="infobar-background">
-                    </div>
-                </div>
-
-
-				<div id="mapIcons">
-					<div id="streetCart">
-						<img src="images/restaurantRed.png" onclick="showInfo()"></img>
-					</div>
-
-				</div>
-
-
-				<div class="bottomBar">
-					<div id="backButton">
-						<img src="images/backButton.png" onclick="clearAll()"></img>
-					</div>
-					<div id="nonfunctionalButtons">
-						<img src="images/buttonBarHalf.png"></img>
-					</div>
-				</div>
-
-            </div>
-
-        </div>
-    </body>
-
-    </html>
+</html>
