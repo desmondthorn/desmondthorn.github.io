@@ -91,7 +91,8 @@ body {
 }
 
 .croudzBackground {
-    background: url(images/Crowdz2.png) no-repeat center center fixed;
+    background: url(images/Crowdz2.png);
+    no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
